@@ -299,6 +299,10 @@ html{
     top: 250px
 }
 .container-3{
+    width: 100%;
+    height: 1850px;
+}
+.container-3-bg{
     background: url(../uploads/1x/1920w/bg-container3.png);
     background-size: cover;
     width: 100%;
