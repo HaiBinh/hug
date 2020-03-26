@@ -1,7 +1,7 @@
 body{
     background-color: #DCDBDB;
     margin: -5px -2px;
-    min-width: 1850px;
+    min-width: 1360px;
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ html{
     margin-bottom: 100px;
 }
 .logo > p{
-    font-size: 31px;
+    font-size: 25px;
     display: inline-block;
     align-content: center;
     position: relative;
@@ -36,9 +36,9 @@ html{
     left: 13px;
 }
 .logo > ul > li {
-    font-size: 31px;
+    font-size: 25px;
     float: left;
-    padding-right: 70px;
+    padding-right: 30px;
 }
 .logo > ul {
     list-style: none;
@@ -48,13 +48,16 @@ html{
 }
 .header-content{
     position: relative;
-    top: 31%
+    top: 21%
 }
 .header-content > img{
     float: right;
     position: relative;
-    top: -500px;
-/*    right: 10%*/
+    top: -400px;
+    min-width: 300px;
+    right: 5%;
+    max-width: 500px;
+    margin-bottom: 15em;
 }
 .header-content-child{
     position: relative;
@@ -62,12 +65,12 @@ html{
     width: 60%
 }
 .header-content-child > img{
-    
+    width: 50%
 }
 .header-content-child > p{
     display: inline-block;
     color: #FFF;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 0.04em;
     position: relative;
@@ -77,17 +80,18 @@ html{
 }
 .header-content-child > h2{
     color: #FFF;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 .header-content-child > h5{
     color: #FFF;
-    font-weight: 100;
-    font-size: 28px;
-    width: 68%;
-    font-family: roboto light;
+    font-weight: 400;
+    font-size: 26px;
+    width: 88%;
+    font-family: roboto;
     margin: 0px;
+    letter-spacing: 0.04em;
 }
 .footer{
     width: 100%;
@@ -134,17 +138,26 @@ html{
 }
 .container-1{
     width: 100%;
-    height: 500px;
+    height: 650px;
 /*    background-color: #FFF;*/
     display: flex
 }
 .container-1-content{
     color: #1A6472;
     width: 40%;
-    position: relative; top: -400px;
+    position: relative;
+    top: -300px;
+}
+#car{
+    position: relative;
+    top: 50%;
+    width: 150%;
+    right: -5%;
+    max-width: 850px;
+    
 }
 .container-1-content > h1{
-    font-size: 55px
+    font-size: 45px
 }
 .container-1-info{ 
     display: flex;
@@ -152,12 +165,14 @@ html{
 }
 .container-1-info > ul {
     list-style: none;
-    width: 35%;
+    width: 40%;
+    position: relative;
+    left: -8%;
 }
 .container-1-info >ul li{
     padding-top: 10px;
-    padding-left: 3px
-    font-size: 20px; 
+    padding-left: 3px;
+    font-size: 15px;
 }
 .container-2{
     z-index: 2;
@@ -172,7 +187,7 @@ html{
     right: 7%;
     text-align: right;
     color: #FFF;
-    margin: 100px 0;
+    margin: 70px 0;
 }
 .container-2-header > h2{
     font-size: 60px;
@@ -180,17 +195,22 @@ html{
 }
 .container-2-header > ul{
     list-style: none;
+    margin: 50px 0;
 }
 .container-2-header > ul > li{
     float:left;
     position: relative;
-    left: 1%;
-    width: 414px;
-    height: 401px;
-    background: url(../uploads/1x/72ppi/72ppi/backgroung-container-items.png);
+/*    left: 1%;*/
+    width: 24%;
+    height: 330px;
+/*    background: url(../uploads/1x/72ppi/72ppi/backgroung-container-items.png);*/
+    background: #FFF;
+    border-radius: 20px;
+    background-size: cover;
     align-items: center;
     align-content: center;
     display: flex;
+    margin-right: 1%;
     flex-direction: column;
     justify-content: center;
     color: #1A6472;
@@ -202,7 +222,7 @@ html{
 }
 .container-2-header > ul > li > h5{
     margin: 0 0 20px 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 .container-2-header > ul > li >ul{
     list-style: square;
@@ -210,7 +230,7 @@ html{
 }
 .container-2-header > ul > li > ul >li{
     text-align: -webkit-center;
-    width: 87%;
+    width: 97%;
 }
 .container-2-content{
     display: flex;
@@ -240,10 +260,12 @@ html{
 }
 .container-2-mslide{
     position: relative;
-    left: 5%;
-    width: 1440px;
-    height: 918px;
+    left: -1%;
+    min-width: 1000px;
+    width: 80%;
+    height: 718px;
     background: url(../uploads/1x/72ppi/web.png);
+    background-size: cover;
 }
 .container-2-mslide > p{
     
@@ -252,7 +274,7 @@ html{
     position: relative;
     float: right;
     top: 30%;
-    right: 15%;
+/*    right: 15%;*/
 }
 .phone-on-slide > ul{
     list-style: none;
@@ -275,7 +297,7 @@ html{
 .container-2-end{
     width: 40%; 
     position: relative;
-    top: -150px;
+/*    top: -150px;*/
     left: -8%;
 }
 .container-2-end > div{
@@ -289,7 +311,7 @@ html{
     margin-bottom: 20px;
 }
 .container-2-end > p{
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 100;
 }
 .container-2-end > img{
@@ -318,12 +340,16 @@ html{
     justify-content: center;
     color: #FFF;
 }
+.container-3 ul li img{
+    max-width: 250px;
+}
 .container-3 ul{
     list-style: none;
 }
 .container-3 ul li{
     float: left;
-    padding-right: 15px
+    padding-right: 15px;
+    width: 20%;
 }
 .container-3 h1{
     font-size: 60px
@@ -337,8 +363,12 @@ html{
     font-weight: 100;
     margin: 0 0 30px 0;
 }
-@media screen (and max-width: 1360px){
+@media screen and (min-width: 1460px){
     .header, .container-1, .container-2, .container-3{
         width: 100%;
+    }
+    .container-2-header > ul{
+        position: relative;
+        right: 12%;
     }
 }
