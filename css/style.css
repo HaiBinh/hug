@@ -7,8 +7,9 @@ body{
     box-sizing: border-box;
 }
 html{
-    font-family: roboto;
+    font-family: Roboto;
 }
+
 .header{
     background: url('../uploads/1x/72ppi/1920w/Asset%207@1920x.png');
     background-size: cover;
@@ -336,4 +337,9 @@ html{
     font-size: 21px;
     font-weight: 100;
     margin: 0 0 30px 0;
+}
+@media screen (and max-width: 1360px){
+    .header, .container-1, .container-2, .container-3{
+        width: 100%;
+    }
 }
