@@ -1,7 +1,7 @@
 body{
     background-color: #DCDBDB;
     margin: -5px -2px;
-    min-width: 1800px;
+    min-width: 1850px;
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -131,4 +131,205 @@ html{
     padding-right: 20px;
     position: relative;
     left: -6%
+}
+.container-1{
+    width: 100%;
+    height: 500px;
+/*    background-color: #FFF;*/
+    display: flex
+}
+.container-1-content{
+    color: #1A6472;
+    width: 40%;
+    position: relative; top: -400px;
+}
+.container-1-content > h1{
+    font-size: 55px
+}
+.container-1-info{ 
+    display: flex;
+    flex-direction: row;
+}
+.container-1-info > ul {
+    list-style: none;
+    width: 35%;
+}
+.container-1-info >ul li{
+    padding-top: 10px;
+    padding-left: 3px
+    font-size: 20px; 
+}
+.container-2{
+    z-index: 2;
+    width: 100%;
+    height: 2921px;
+    background: url('../uploads/1x/72ppi/1920w/Asset%2029.png')
+}
+.container-2-header{
+    float: right;
+    position: relative;
+    top: 7%;
+    right: 7%;
+    text-align: right;
+    color: #FFF;
+    margin: 100px 0;
+}
+.container-2-header > h2{
+    font-size: 60px;
+    margin: 0
+}
+.container-2-header > ul{
+    list-style: none;
+}
+.container-2-header > ul > li{
+    float:left;
+    position: relative;
+    left: 1%;
+    width: 414px;
+    height: 401px;
+    background: url(../uploads/1x/72ppi/72ppi/backgroung-container-items.png);
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1A6472;
+}
+.container-2-header > ul > li > h2{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.container-2-header > ul > li > h5{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+.container-2-header > ul > li >ul{
+    list-style: square;
+    width: 80%;
+}
+.container-2-header > ul > li > ul >li{
+    text-align: -webkit-center;
+    width: 87%;
+}
+.container-2-content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%; 
+    width: 90%;
+    color: #FFF;
+}
+.container-2-content > h2{
+    font-size: 60px;
+    margin: 0
+}
+.container-2-content > p{
+    font-size: 20px; 
+    font-weight: 100
+}
+.container-2-slide{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    margin-top: 50px
+}
+.container-2-mslide{
+    position: relative;
+    left: 5%;
+    width: 1440px;
+    height: 918px;
+    background: url(../uploads/1x/72ppi/web.png);
+}
+.container-2-mslide > p{
+    
+}
+.phone-on-slide{
+    position: relative;
+    float: right;
+    top: 30%;
+    right: 15%;
+}
+.phone-on-slide > ul{
+    list-style: none;
+    position: relative;
+    left: 26%;
+    top: -100px;
+    width: 180px;
+}
+.phone-on-slide > ul > li{
+    float: left;
+    padding-right: 10px;
+    
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #FFF
+}
+.container-2-end{
+    width: 40%; 
+    position: relative;
+    top: -150px;
+    left: -8%;
+}
+.container-2-end > div{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.container-2-end > div >h3{
+    font-size: 40px; 
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.container-2-end > p{
+    font-size: 22px;
+    font-weight: 100;
+}
+.container-2-end > img{
+    float: right;
+    position: relative;
+    right: -100px;
+    top: 250px
+}
+.container-3{
+    background: url(../uploads/1x/1920w/bg-container3.png);
+    background-size: cover;
+    width: 100%;
+    height: 2100px;
+    z-index: -1;
+    position: relative;
+    top: -250px;
+    left: -3px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+.container-3 ul{
+    list-style: none;
+}
+.container-3 ul li{
+    float: left;
+    padding-right: 15px
+}
+.container-3 h1{
+    font-size: 60px
+}
+.container-3 h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+.container-3 p{
+    font-size: 21px;
+    font-weight: 100;
+    margin: 0 0 30px 0;
 }
