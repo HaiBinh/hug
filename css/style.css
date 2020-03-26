@@ -7,9 +7,8 @@ body{
     box-sizing: border-box;
 }
 html{
-    font-family: Roboto;
+    font-family: Roboto
 }
-
 .header{
     background: url('../uploads/1x/72ppi/1920w/Asset%207@1920x.png');
     background-size: cover;
