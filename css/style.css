@@ -372,3 +372,9 @@ html{
         right: 12%;
     }
 }
+@media screen and (max-width: 1123px){
+    .logo ul{
+        position: relative;
+        top: -90px;
+    }
+}
