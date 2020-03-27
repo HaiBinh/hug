@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+$header-height: 60px;
+$body-padding: 20px;
+$max-container-width: 1200px;
+$primary-color: #1A6472;
+$seconday-color: #F36F42;
+$primary-font: 'Roboto';
+
+.container-theme {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: $max-container-width;
+  padding: $body-padding;
+}
+
+.debug {
+  border: red solid 1px;
+  width: 100%;
+  //height: 500px;
+}
+
+html {
+  width: 100%;
+  body {
+    font-family: $primary-font;
+    //padding-right: $body-padding;
+    //padding-left: $body-padding;
+    color: $primary-color;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .header {
+      color: white;
+      position: absolute;
+      height: $header-height;
+      display: block;
+      flex-direction: row;
+      z-index: 1000;
+      width: 100%;
+      .container{
+        @extend .container-theme;
+        div {
+        display: inline-block;
+        }
+        .logo {
+
+        }
+        .slogan {
+
+        }
+
+        .top-menu {
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            li {
+              float: left;
+              a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                &:hover {
+                  background-color: #111;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .body {
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      width: 100%;
+      .session {
+        position: relative;
+        width: 100%;
+        .container {
+
+          @extend .container-theme;
+          @extend .debug;
+
+          .session-name {
+            text-align: inherit;
+            span:last-child {
+              color: $seconday-color;
+            }
+          }
+          .session-name-invert {
+            text-align: inherit;
+            span:first-child {
+              color: $seconday-color;
+            }
+          }
+          .cols {
+            display: flex;
+            flex-direction: row;
+            //flex-wrap: wrap;
+            //display: grid;
+            //grid-gap: 5px;
+            //grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            //grid-template-rows: repeat(2, 360px);
+            .col {
+              width: 50%;
+              min-width: 360px;
+              position: relative;
+              &.feature-image {
+                div {
+                  position: relative;
+                  display: block;
+                  height: 100%;
+                  width: 100%;
+                  img {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                  }
+                }
+
+              }
+              //display: inline;
+            }
+          }
+          @media (max-width: 720px) {
+            .cols {
+              display: block;
+              flex-direction: unset;
+              .col {
+                width: 100%;
+                &.feature-image {
+                  div {
+                    height: auto;
+                    img {
+                      position: relative;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .banner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      min-width: $max-container-width;
+      height: auto;
+    }
+    .banner-info {
+      @extend .debug;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      //transform: translateX(calc(1400px - 1200px));
+      -webkit-transform: translateX(calc((100% - 1200px)/2));
+      //-moz-transform: translateX(calc(1400px - 1200px));
+      //width: 100%;
+    }
+  }
+}
