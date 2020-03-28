@@ -45,17 +45,34 @@ html {
             text-decoration: none; }
             html body .header .container .top-menu ul li a:hover {
               background-color: #111; }
+    html body .programs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      html body .programs .program-card {
+        padding: 20px 10px 10px 10px;
+        min-width: 180px;
+        margin: 8px;
+        text-align: center;
+        background-color: white;
+        border-radius: 16px;
+        flex: 1 1 0;
+        color: #1A6472; }
     html body .body {
       width: 100%; }
       html body .body .text-center {
         text-align: center; }
       html body .body .text-right {
         text-align: right; }
+      html body .body .background-primary {
+        background-color: #1A6472;
+        color: white; }
       html body .body .session {
         position: relative;
         width: 100%; }
         html body .body .session .container .session-name {
-          text-align: inherit; }
+          text-align: inherit;
+          font-size: 2rem; }
           html body .body .session .container .session-name span:last-child {
             color: #F36F42; }
         html body .body .session .container .session-name-invert {

@@ -77,6 +77,22 @@ html {
 
       }
     }
+    .programs {
+      //padding: 0 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .program-card {
+        padding: 20px 10px 10px 10px;
+        min-width: 180px;
+        margin: 8px;
+        text-align: center;
+        background-color: white;
+        border-radius: 16px;
+        flex: 1 1 0;
+        color: $primary-color;
+      }
+    }
     .body {
       .text-center {
         text-align: center;
@@ -85,6 +101,10 @@ html {
         text-align: right;
       }
       width: 100%;
+      .background-primary {
+        background-color: $primary-color;
+        color: white;
+      }
       .session {
         position: relative;
         width: 100%;
@@ -95,6 +115,7 @@ html {
 
           .session-name {
             text-align: inherit;
+            font-size: 2rem;
             span:last-child {
               color: $seconday-color;
             }
