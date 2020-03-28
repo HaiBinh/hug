@@ -24,6 +24,7 @@ $primary-font: 'Roboto';
 
 html {
   width: 100%;
+
   body {
     font-family: $primary-font;
     //padding-right: $body-padding;
@@ -32,6 +33,7 @@ html {
     padding: 0;
     margin: 0;
     width: 100%;
+
     .header {
       color: white;
       position: absolute;
@@ -40,14 +42,18 @@ html {
       flex-direction: row;
       z-index: 1000;
       width: 100%;
-      .container{
+
+      .container {
         @extend .container-theme;
+
         div {
-        display: inline-block;
+          display: inline-block;
         }
+
         .logo {
 
         }
+
         .slogan {
 
         }
@@ -59,14 +65,17 @@ html {
             padding: 0;
             overflow: hidden;
             background-color: #333;
+
             li {
               float: left;
+
               a {
                 display: block;
                 color: white;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+
                 &:hover {
                   background-color: #111;
                 }
@@ -77,11 +86,13 @@ html {
 
       }
     }
+
     .programs {
       //padding: 0 30px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
       .program-card {
         padding: 20px 10px 10px 10px;
         min-width: 180px;
@@ -93,21 +104,27 @@ html {
         color: $primary-color;
       }
     }
+
     .body {
       .text-center {
         text-align: center;
       }
+
       .text-right {
         text-align: right;
       }
+
       width: 100%;
+
       .background-primary {
         background-color: $primary-color;
         color: white;
       }
+
       .session {
         position: relative;
         width: 100%;
+
         .container {
 
           @extend .container-theme;
@@ -116,16 +133,20 @@ html {
           .session-name {
             text-align: inherit;
             font-size: 2rem;
+
             span:last-child {
               color: $seconday-color;
             }
           }
+
           .session-name-invert {
             text-align: inherit;
+
             span:first-child {
               color: $seconday-color;
             }
           }
+
           .cols {
             display: flex;
             flex-direction: row;
@@ -138,12 +159,14 @@ html {
               width: 50%;
               min-width: 360px;
               position: relative;
+
               &.feature-image {
                 div {
                   position: relative;
                   display: block;
                   height: 100%;
                   width: 100%;
+
                   img {
                     position: absolute;
                     bottom: 0;
@@ -152,18 +175,23 @@ html {
                 }
 
               }
+
               //display: inline;
             }
           }
+
           @media (max-width: 720px) {
             .cols {
               display: block;
               flex-direction: unset;
+
               .col {
                 width: 100%;
+
                 &.feature-image {
                   div {
                     height: auto;
+
                     img {
                       position: relative;
                     }
@@ -174,6 +202,122 @@ html {
           }
         }
       }
+
+      .footer {
+        background: #1A6472;
+        color: #FFFFFF;
+        .column{
+          display: flex;
+          flex-direction: row;
+          .column-left{
+            width: 50%;
+          }
+          .column-right{
+            width: 50%;
+          }
+        }
+        .footer-info {
+          .logo {
+            @extend .ul-default;
+          }
+          .hidden{
+            display: none;
+            //display: block;
+            @extend .ul-default;
+          }
+          .subcribe {
+            @extend .subcribe-form
+          }
+          .subcribe-2{
+            @extend .subcribe-form;
+          }
+        }
+
+        .footer-footer {
+          background: #353535;
+          .footer-info {
+            @extend .ul-default;
+            .column-left{
+              ul{
+                li{
+                  padding: 0.5em 2em 0.1em 0;
+                }
+              }
+            }
+            .column-right{
+              ul{
+                float: right;
+                padding-right: 2em;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 900px){
+          .column{
+            flex-direction: column;
+            width: 100%;
+            .column-left{
+              width: 100%;
+            }
+            .column-right{
+              width: 100%;
+            }
+          }
+          .footer-info{
+            .hidden{
+              display: block;
+            }
+            .subcribe{
+              display: none;
+            }
+          }
+          .footer-footer{
+            .column-left{
+              width: 100%;
+              justify-content: center;
+              display: flex;
+            }
+            .column-right{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .ul-default{
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+          padding-right: 0.5em;
+        }
+      }
+    }
+    .subcribe-form{
+      padding: 0;
+      margin: 0 0 1em 0;
+      p {
+        font-size: 29px;
+        padding: 0;
+        margin: 1em 0.1em 0.1em 0;
+      }
+
+      input {
+        width: 60%;
+        height: 36px;
+        border: solid 1px #FFFFFF;
+      }
+
+      button {
+        width: 20%;
+        background: #303030;
+        height: 40px;
+        border: 0;
+      }
     }
     .banner {
       position: relative;
@@ -182,13 +326,14 @@ html {
       min-width: $max-container-width;
       height: auto;
     }
+
     .banner-info {
       @extend .debug;
       position: absolute;
       z-index: 2;
       top: 0;
       //transform: translateX(calc(1400px - 1200px));
-      -webkit-transform: translateX(calc((100% - 1200px)/2));
+      -webkit-transform: translateX(calc((100% - 1200px) / 2));
       //-moz-transform: translateX(calc(1400px - 1200px));
       //width: 100%;
     }
