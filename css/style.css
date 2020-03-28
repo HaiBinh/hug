@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+@import url(font-awesome-4.7.0/font-awesome-4.7.0/scss/font-awesome.css);
 .container-theme, html body .body .session .container, html body .header .container {
   margin: auto;
   width: 100%;
@@ -83,6 +84,10 @@ html body .body .background-primary {
   background-color: #1A6472;
   color: white;
 }
+html body .body .background-third {
+  background-image: url("../uploads/1x/72ppi/bg-3.png");
+  background-size: cover;
+}
 html body .body .session {
   position: relative;
   width: 100%;
@@ -134,6 +139,85 @@ html body .body .session .container .cols .col.feature-image div img {
   html body .body .session .container .cols .col.feature-image div img {
     position: relative;
   }
+}
+html body .body .session .container .table-hug {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+html body .body .session .container .table-hug .pc-screen {
+  width: 100%;
+}
+html body .body .session .container .table-hug .pc-screen table {
+  width: 100%;
+}
+html body .body .session .container .table-hug .pc-screen table thead tr {
+  background-color: #29363D;
+  color: #FFFFFF;
+  height: 50px;
+}
+html body .body .session .container .table-hug .pc-screen table thead tr th {
+  font-weight: 400;
+  border: #353535 solid 1px;
+}
+html body .body .session .container .table-hug .pc-screen table thead tr th:first-child {
+  width: 200px;
+  color: #FFFFFF;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr:nth-child(odd) {
+  background-color: #D8D8D8;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr {
+  color: #545554;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr span {
+  color: #1A6472;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr .fa-check-circle-o {
+  color: #1A6472;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr td:first-child(odd) {
+  width: 200px;
+  background-color: red;
+}
+html body .body .session .container .table-hug .pc-screen table tbody tr td {
+  border: #353535 solid 1px;
+}
+@media screen and (max-width: 480px) {
+  html body .body .session .container .table-hug .pc-screen {
+    display: none;
+  }
+  html body .body .session .container .table-hug .mobile-screen {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  html body .body .session .container .table-hug .mobile-screen {
+    display: none;
+  }
+}
+html body .body .session .container .table-hug .mobile-screen table thead {
+  overflow-x: scroll;
+}
+html body .body .session .container .table-hug .mobile-screen table thead tr {
+  overflow-x: scroll;
+}
+html body .body .session .container .table-hug .mobile-screen table thead tr th {
+  min-width: 200px;
+}
+html body .body .session .container .table-hug .mobile-screen table tbody {
+  overflow-x: scroll;
+}
+html body .body .session .container .table-hug .mobile-screen table tbody tr {
+  overflow-x: scroll;
+}
+html body .body .session .container .table-hug .mobile-screen table tbody tr td {
+  min-width: 200px;
 }
 html body .body .news-blog {
   background: #DCDBDB;
@@ -225,6 +309,16 @@ html body .body .footer .footer-footer .footer-info .column-right ul {
   html body .body .footer .footer-footer .column-right {
     display: none;
   }
+}
+html body .btn-primary {
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(to left, #F9A450, #F37044);
+  border: 0;
+  border-radius: 30px;
+  margin: 1em;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 html body .ul-default ul, html body .body .footer .footer-info .logo ul, html body .body .footer .footer-info .hidden ul, html body .body .footer .footer-footer .footer-info ul {
   list-style: none;

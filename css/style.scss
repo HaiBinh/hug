@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+@import url(font-awesome-4.7.0/font-awesome-4.7.0/scss/font-awesome.css);
 
 $header-height: 60px;
 $body-padding: 20px;
@@ -120,7 +121,10 @@ html {
         background-color: $primary-color;
         color: white;
       }
-
+      .background-third{
+        background-image: url("../uploads/1x/72ppi/bg-3.png");
+        background-size: cover;
+      }
       .session {
         position: relative;
         width: 100%;
@@ -194,6 +198,96 @@ html {
 
                     img {
                       position: relative;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .table-hug{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            .pc-screen{
+              width: 100%;
+              table{
+                width: 100%;
+
+                thead{
+                  tr{
+                    background-color: #29363D;
+                    color: #FFFFFF;
+                    height: 50px;
+                    th{
+                      font-weight: 400;
+                      border: #353535 solid 1px;
+                    }
+                    th:first-child{
+                      width: 200px;
+                      color: #FFFFFF;
+                    }
+                  }
+                }
+                tbody{
+                  tr:nth-child(odd){
+                    background-color: #D8D8D8;
+                  }
+                  tr:nth-child(even){
+                    background-color: #FFFFFF;
+                  }
+                  tr{
+                    color: #545554;
+                    span{
+                      color: $primary-color;
+                    }
+                    .fa-check-circle-o {
+                      color: $primary-color;
+                    }
+                    td:first-child(odd){
+                      width: 200px;
+                      //background-color: #9E9D9E;
+                      background-color: red;
+                    }
+                    td{
+                      border: #353535 solid 1px;
+                    }
+                  }
+                }
+              }
+            }
+            @media screen and (max-width: 480px){
+              .pc-screen{
+                display: none;
+              }
+              .mobile-screen{
+                display: none;
+              }
+            }
+            @media screen and (min-width: 481px){
+              .mobile-screen{
+                display: none;
+              }
+            }
+            .mobile-screen{
+              table{
+                //overflow-x: scroll;
+                thead{
+                  overflow-x: scroll;
+                  tr{
+                    overflow-x: scroll;
+                    th{
+                      min-width: 200px;
+                    }
+                  }
+                }
+                tbody{
+                  overflow-x: scroll;
+                  tr{
+                    overflow-x: scroll;
+                    td{
+                      min-width: 200px;
                     }
                   }
                 }
@@ -323,7 +417,16 @@ html {
         }
       }
     }
-
+    .btn-primary{
+      width: 200px;
+      height: 50px;
+      background-image: linear-gradient(to left, #F9A450, #F37044);
+      border: 0;
+      border-radius: 30px;
+      margin: 1em;
+      color: #FFFFFF;
+      font-size: 18px;
+    }
     .ul-default{
       ul {
         list-style: none;
