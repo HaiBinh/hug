@@ -57,7 +57,6 @@ html body .header .container {
 }
 html body .header .container div {
   margin: auto;
-  display: inline-block;
 }
 html body .header .container .logo {
   margin-right: 10px;
