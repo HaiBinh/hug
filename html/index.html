@@ -5,6 +5,7 @@
         <!--<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">-->
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/script.js"></script>
     </head>
     <body>
         <div class="header">
@@ -17,20 +18,20 @@
                 </div>
                 <div class="top-menu">
                     <ul class="pc-screen">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#service">SERVICE</a></li>
-                        <li><a href="#package">PACKAGE</a></li>
-                        <li><a href="#news">NEWS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a class="topnav-item" href="#about">ABOUT</a></li>
+                        <li><a class="topnav-item" href="#service">SERVICE</a></li>
+                        <li><a class="topnav-item" href="#package">PACKAGE</a></li>
+                        <li><a class="topnav-item" href="#news">NEWS</a></li>
+                        <li><a class="topnav-item" href="#contact">CONTACT</a></li>
                     </ul>
                     <div class="topnav mobile-screen">
 
                       <div id="topnav">
-                        <a href="#about">ABOUT</a>
-                        <a href="#service">SERVICE</a>
-                        <a href="#package">PACKAGE</a>
-                        <a href="#news">NEWS</a>
-                        <a href="#contact">CONTACT</a>
+                        <a class="topnav-item" href="#about">ABOUT</a>
+                        <a class="topnav-item" href="#service">SERVICE</a>
+                        <a class="topnav-item" href="#package">PACKAGE</a>
+                        <a class="topnav-item" href="#news">NEWS</a>
+                        <a class="topnav-item" href="#contact">CONTACT</a>
                       </div>
                       <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
                         <i class="fa fa-bars"></i>
@@ -39,16 +40,20 @@
                 </div>
             </div>
         </div>
-        <script>
-            function openMobileNav() {
-              var x = document.getElementById("topnav");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-        </script>
+        <!--<script>-->
+            <!--function openMobileNav() {-->
+              <!--var x = document.getElementById("topnav");-->
+              <!--if (x.style.display === "block") {-->
+                <!--x.style.display = "none";-->
+              <!--} else {-->
+                <!--x.style.display = "block";-->
+              <!--}-->
+            <!--}-->
+            <!--var menu_item = document.getElementsByClassName("topnav-item");-->
+            <!--menu_item.onclick = function () {-->
+                <!--openMobileNav()-->
+            <!--}-->
+        <!--</script>-->
         <div class="body">
             <div class="session banner">
                 <!--<div class="text-center">-->

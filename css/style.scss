@@ -168,7 +168,6 @@ html {
             }
           }
         }
-
       }
     }
     .programs {
@@ -179,7 +178,7 @@ html {
       -webkit-flex-wrap: wrap;
       .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 180px;
+        min-width: 160px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -198,7 +197,6 @@ html {
             &:before {
               content: '● ';
             }
-
           }
         }
       }
@@ -248,7 +246,6 @@ html {
             .about {
               width: 100%;
             }
-
           }
           .session-name-invert {
             text-align: inherit;
@@ -281,7 +278,6 @@ html {
                     width: 100%;
                   }
                 }
-
               }
               //display: inline;
             }
@@ -457,7 +453,7 @@ html {
                 text-decoration: none;
                 font-weight: bold;
               }
-            };
+            }
           }
         }
       }
