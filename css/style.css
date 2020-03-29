@@ -133,8 +133,9 @@ html {
         -webkit-flex: 1 1 0;
         color: #1A6472; }
         html body .programs .program-card .program-icon {
-          width: 30%;
-          display: inline-block; }
+          width: 35%;
+          display: inline-block;
+          text-align: center; }
         html body .programs .program-card p span {
           display: block; }
           html body .programs .program-card p span:before {
@@ -422,6 +423,7 @@ html {
       html img {
         width: 100%; }
         html img.original {
-          width: auto; } }
+          width: auto;
+          max-width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

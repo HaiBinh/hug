@@ -188,8 +188,9 @@ html {
         -webkit-flex: 1 1 0;
         color: $primary-color;
         .program-icon {
-          width: 30%;
+          width: 35%;
           display: inline-block;
+          text-align: center;
         }
         p {
           span {
@@ -674,6 +675,7 @@ html {
       width: 100%;
       &.original {
         width: auto;
+        max-width: 100%;
       }
     }
   }
