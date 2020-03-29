@@ -200,7 +200,7 @@ html body .body .session .container .about {
 }
 @media (max-width: 950px) {
   html body .body .session .container .about {
-    width: 100%;
+    width: 80%;
   }
 }
 html body .body .session .container .session-name-invert {
@@ -242,6 +242,7 @@ html body .body .session .container .cols .col.feature-image div img {
   }
   html body .body .session .container .cols .col.feature-image div img {
     position: relative;
+    width: 90%;
   }
 }
 html body .body .session .container .table-hug {
@@ -253,6 +254,9 @@ html body .body .session .container .table-hug {
 }
 html body .body .session .container .table-hug .pc-screen-1 {
   width: 100%;
+  overflow-x: scroll;
+  min-width: 330px;
+  padding-left: 40px;
 }
 html body .body .session .container .table-hug .pc-screen-1 table {
   width: 100%;
@@ -323,6 +327,19 @@ html body .body .session .container .table-hug .mobile-screen table tbody tr {
 html body .body .session .container .table-hug .mobile-screen table tbody tr td {
   min-width: 200px;
 }
+html body .body .features {
+  display: flex;
+  align-items: center;
+}
+html body .body .features .feature {
+  width: 100%;
+}
+html body .body .features .feature .feature-item {
+  width: 100%;
+}
+html body .body .features .feature .feature-item .feature-info {
+  width: 50%;
+}
 html body .body .news-blog {
   background: #DCDBDB;
 }
@@ -336,9 +353,11 @@ html body .body .news-blog .programs {
   background: #DCDBDB;
   overflow-x: scroll;
   flex-wrap: unset;
+  min-width: 400px;
 }
 html body .body .news-blog .programs .program-card {
-  min-width: 220px;
+  min-width: 260px;
+  height: 490px;
   overflow: hidden;
   text-align: left;
   padding: 0;
@@ -346,6 +365,7 @@ html body .body .news-blog .programs .program-card {
   border-radius: unset;
 }
 html body .body .news-blog .programs .program-card img {
+  width: 272px;
   margin-left: -2px;
 }
 html body .body .news-blog .programs .program-card .content {

@@ -228,7 +228,7 @@ html {
           }
           @media (max-width: $mobile-screen-from) {
             .about {
-              width: 100%;
+              width: 80%;
             }
 
           }
@@ -278,6 +278,7 @@ html {
                     height: auto;
                     img {
                       position: relative;
+                      width: 90%;
                     }
                   }
                 }
@@ -292,6 +293,9 @@ html {
             color: #FFFFFF;
             .pc-screen-1{
               width: 100%;
+              overflow-x: scroll;
+              min-width: 330px;
+              padding-left: 40px;
               table{
                 width: 100%;
 
@@ -376,6 +380,19 @@ html {
           }
         }
       }
+      .features{
+          display: flex;
+          align-items: center;
+        .feature{
+          width: 100%;
+          .feature-item{
+            width: 100%;
+            .feature-info{
+              width: 50%;
+            }
+          }
+        }
+      }
       .news-blog{
         background: #DCDBDB;
         .session-name{
@@ -390,14 +407,17 @@ html {
           background: #DCDBDB;
           overflow-x: scroll;
           flex-wrap: unset;
+          min-width: 400px;
           .program-card{
-            min-width: 220px;
+            min-width: 260px;
+            height: 490px;
             overflow: hidden;
             text-align: left;
             padding: 0;
             margin: 0 1em 0 0;
             border-radius: unset;
             img{
+              width: 272px;
               margin-left: -2px;
             }
             .content{
