@@ -298,7 +298,7 @@ html {
               padding-left: 40px;
               table{
                 width: 100%;
-
+                border-spacing: 3px 0;
                 thead{
                   tr{
                     background-color: #29363D;
@@ -306,6 +306,8 @@ html {
                     height: 50px;
                     th{
                       font-weight: 400;
+                      width: 200px;
+                      min-width: 150px;
                       border: #353535 solid 1px;
                     }
                     th:first-child{
@@ -331,11 +333,13 @@ html {
                     }
                     td:first-child(odd){
                       width: 200px;
-                      //background-color: #9E9D9E;
-                      background-color: red;
+                      background-color: #9E9D9E;
+                      //background-color: red;
                     }
                     td{
                       border: #353535 solid 1px;
+                      width: 200px;
+                      min-width: 150px;
                     }
                   }
                 }

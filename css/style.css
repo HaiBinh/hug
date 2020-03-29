@@ -260,6 +260,7 @@ html body .body .session .container .table-hug .pc-screen-1 {
 }
 html body .body .session .container .table-hug .pc-screen-1 table {
   width: 100%;
+  border-spacing: 3px 0;
 }
 html body .body .session .container .table-hug .pc-screen-1 table thead tr {
   background-color: #29363D;
@@ -268,6 +269,8 @@ html body .body .session .container .table-hug .pc-screen-1 table thead tr {
 }
 html body .body .session .container .table-hug .pc-screen-1 table thead tr th {
   font-weight: 400;
+  width: 200px;
+  min-width: 150px;
   border: #353535 solid 1px;
 }
 html body .body .session .container .table-hug .pc-screen-1 table thead tr th:first-child {
@@ -291,10 +294,12 @@ html body .body .session .container .table-hug .pc-screen-1 table tbody tr .fa-c
 }
 html body .body .session .container .table-hug .pc-screen-1 table tbody tr td:first-child(odd) {
   width: 200px;
-  background-color: red;
+  background-color: #9E9D9E;
 }
 html body .body .session .container .table-hug .pc-screen-1 table tbody tr td {
   border: #353535 solid 1px;
+  width: 200px;
+  min-width: 150px;
 }
 @media screen and (max-width: 480px) {
   html body .body .session .container .table-hug .pc-screen {
