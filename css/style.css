@@ -46,11 +46,17 @@ html {
       font-size: 3rem; }
     html body h2 {
       font-size: 2.4rem;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em; }
     html body h3 {
       font-size: 2rem; }
     html body h4 {
       font-size: 1.5rem; }
+    html body h5 {
+      font-size: 1rem;
+      margin-block-start: 1em;
+      margin-block-end: 1em; }
     html body .header {
       font-weight: 300;
       color: white;
@@ -116,6 +122,9 @@ html {
               html body .header .container .top-menu .topnav a.active {
                 background-color: #1A6472;
                 color: white; }
+      @media screen and (max-width: 600px) {
+        html body .header .container {
+          padding: 30px; } }
     html body .programs {
       display: flex;
       flex-direction: row;
@@ -123,7 +132,7 @@ html {
       -webkit-flex-wrap: wrap; }
       html body .programs .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 160px;
+        min-width: 150px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -261,6 +270,9 @@ html {
               overflow-x: auto; }
               html body .body .session .container .table-hug .mobile-screen table tbody tr td {
                 min-width: 200px; }
+        @media screen and (max-width: 600px) {
+          html body .body .session .container {
+            padding: 30px; } }
       html body .body .features {
         display: flex;
         align-items: center; }
@@ -425,6 +437,20 @@ html {
         width: 100%; }
         html img.original {
           width: auto;
-          max-width: 100%; } }
+          max-width: 100%; }
+      html body h1 {
+        font-size: 2.5rem; }
+      html body h2 {
+        font-size: 2rem;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em; }
+      html body h3 {
+        font-size: 1.75rem; }
+      html body h4 {
+        font-size: 1.5rem; }
+      html body h5 {
+        font-size: 1rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
