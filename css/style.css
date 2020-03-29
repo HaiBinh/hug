@@ -132,7 +132,7 @@ html {
       -webkit-flex-wrap: wrap; }
       html body .programs .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 150px;
+        min-width: 114px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -291,8 +291,7 @@ html {
         html body .body .news-blog .programs {
           background: #DCDBDB;
           overflow-x: auto;
-          flex-wrap: unset;
-          min-width: 400px; }
+          flex-wrap: unset; }
           html body .body .news-blog .programs .program-card {
             min-width: 260px;
             height: 490px;

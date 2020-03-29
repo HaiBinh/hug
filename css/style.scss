@@ -193,7 +193,7 @@ html {
       -webkit-flex-wrap: wrap;
       .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 150px;
+        min-width: 114px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -449,7 +449,7 @@ html {
           background: #DCDBDB;
           overflow-x: auto;
           flex-wrap: unset;
-          min-width: 400px;
+          //min-width: 400px;
           .program-card{
             min-width: 260px;
             height: 490px;
