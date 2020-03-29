@@ -6,7 +6,7 @@
 
 $header-height: 60px;
 $body-padding: 40px;
-$max-container-width: 1280px;
+$max-container-width: 1200px;
 $primary-color: #1A6472;
 $seconday-color: #F36F42;
 $primary-font: 'Roboto';
@@ -34,6 +34,7 @@ html {
   .pc-screen {
     display: unset;
   }
+
   @media (max-width: $mobile-screen-from) {
     .mobile-screen {
       display: unset;
@@ -51,6 +52,7 @@ html {
     margin: 0;
     width: 100%;
     .header {
+      font-weight: 300;
       color: white;
       position: absolute;
       height: $header-height;
@@ -96,7 +98,7 @@ html {
                 padding: 14px 10px;
                 text-decoration: none;
                 &:hover {
-                  text-underline: white;
+                  text-decoration: underline;
                 }
               }
             }
@@ -553,9 +555,10 @@ html {
         left: 50%;
         transform: translate(-50%, 0);
       }
+
       .banner-info {
         padding-top: 140px !important;
-        padding-bottom: 100px !important;
+        padding-bottom: 140px !important;
         margin: 0 !important;
         @extend .debug;
         position: relative;
@@ -570,9 +573,21 @@ html {
           img {
             width: 100%;
             &.full-logo{
-              width: 80%;
+              width: 90%;
             }
 
+          }
+          tr {
+            td {
+              vertical-align: top;
+              &:first-child {
+                padding-top: 60px;
+                padding-bottom: 60px;
+              }
+              &:last-child {
+                padding: 20px;
+              }
+            }
           }
         }
         img {
@@ -585,10 +600,15 @@ html {
         .pc-screen {
           img {
             &.full-logo{
-              width: 80%;
+              width: 90%;
             }
 
           }
+        }
+      }
+      @media (max-width: $mobile-screen-from) {
+        .banner-info {
+          padding-bottom: 240px !important;
         }
       }
     }
