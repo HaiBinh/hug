@@ -44,6 +44,10 @@ html {
     }
   }
   body {
+    input {
+      padding: 0 10px;
+      margin: 5px 1px;
+    }
     font-family: $primary-font;
     //padding-right: $body-padding;
     //padding-left: $body-padding;
@@ -51,6 +55,31 @@ html {
     padding: 0;
     margin: 0;
     width: 100%;
+    .text-center {
+        text-align: center;
+      }
+    .text-right {
+      text-align: right;
+    }
+    .text-light {
+      font-weight: 100;
+    }
+    .text-large {
+      font-size: 1.4rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 300;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
     .header {
       font-weight: 300;
       color: white;
@@ -158,6 +187,10 @@ html {
         flex: 1 1 0;
         -webkit-flex: 1 1 0;
         color: $primary-color;
+        .program-icon {
+          width: 30%;
+          display: inline-block;
+        }
         p {
           span {
             display: block;
@@ -169,32 +202,14 @@ html {
         }
       }
     }
+    .introduce {
+      tr {
+        td {
+          padding: 0 5px;
+        }
+      }
+    }
     .body {
-      .text-center {
-        text-align: center;
-      }
-      .text-right {
-        text-align: right;
-      }
-      .text-light {
-        font-weight: 100;
-      }
-      .text-large {
-        font-size: 1.4rem;
-      }
-      h1 {
-        font-size: 3rem;
-      }
-      h2 {
-        font-size: 2.4rem;
-        font-weight: 300;
-      }
-      h3 {
-        font-size: 2rem;
-      }
-      h4 {
-        font-size: 1.5rem;
-      }
       width: 100%;
       .background-primary {
         //background-color: $primary-color;
@@ -204,6 +219,8 @@ html {
       .background-third{
         background-image: url("../uploads/1x/72ppi/bg-3.png");
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
       .session {
         position: relative;
@@ -228,12 +245,13 @@ html {
           }
           @media (max-width: $mobile-screen-from) {
             .about {
-              width: 80%;
+              width: 100%;
             }
 
           }
           .session-name-invert {
             text-align: inherit;
+            font-size: 2rem;
             span:first-child {
               color: $seconday-color;
             }
@@ -248,7 +266,7 @@ html {
             //grid-template-rows: repeat(2, 360px);
             .col {
               width: 50%;
-              min-width: 360px;
+              min-width: 240px;
               position: relative;
               &.feature-image {
                 div {
@@ -278,7 +296,7 @@ html {
                     height: auto;
                     img {
                       position: relative;
-                      width: 90%;
+                      width: 100%;
                     }
                   }
                 }
@@ -293,9 +311,9 @@ html {
             color: #FFFFFF;
             .pc-screen-1{
               width: 100%;
-              overflow-x: scroll;
+              overflow-x: auto;
               min-width: 330px;
-              padding-left: 40px;
+              //padding-left: 40px;
               table{
                 width: 100%;
                 border-spacing: 3px 0;
@@ -308,7 +326,8 @@ html {
                       font-weight: 400;
                       width: 200px;
                       min-width: 150px;
-                      border: #353535 solid 1px;
+                      //border: #353535 solid 1px;
+                      border: none;
                     }
                     th:first-child{
                       width: 200px;
@@ -337,7 +356,8 @@ html {
                       //background-color: red;
                     }
                     td{
-                      border: #353535 solid 1px;
+                      //border: #353535 solid 1px;
+                      border: none;
                       width: 200px;
                       min-width: 150px;
                     }
@@ -362,18 +382,18 @@ html {
               table{
                 //overflow-x: scroll;
                 thead{
-                  overflow-x: scroll;
+                  overflow-x: auto;
                   tr{
-                    overflow-x: scroll;
+                    overflow-x: auto;
                     th{
                       min-width: 200px;
                     }
                   }
                 }
                 tbody{
-                  overflow-x: scroll;
+                  overflow-x: auto;
                   tr{
-                    overflow-x: scroll;
+                    overflow-x: auto;
                     td{
                       min-width: 200px;
                     }
@@ -409,7 +429,7 @@ html {
         }
         .programs{
           background: #DCDBDB;
-          overflow-x: scroll;
+          overflow-x: auto;
           flex-wrap: unset;
           min-width: 400px;
           .program-card{
@@ -418,7 +438,7 @@ html {
             overflow: hidden;
             text-align: left;
             padding: 0;
-            margin: 0 1em 0 0;
+            //margin: 0 1em 0 0;
             border-radius: unset;
             img{
               width: 272px;
@@ -505,7 +525,7 @@ html {
               display: block;
             }
             .subcribe{
-              display: none;
+              //display: none;
             }
           }
           .footer-footer{
@@ -530,6 +550,10 @@ html {
       margin: 1em;
       color: #FFFFFF;
       font-size: 18px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .ul-default{
       ul {
@@ -553,16 +577,22 @@ html {
       }
 
       input {
-        width: 60%;
+        width: 100%;
         height: 36px;
         border: solid 1px #FFFFFF;
       }
 
       button {
+        color: white;
         width: 20%;
         background: #303030;
         height: 40px;
         border: 0;
+        cursor: pointer;
+        &:hover {
+          background-color: #eeeeee;
+          color: $primary-color
+        }
       }
     }
     .banner {
@@ -634,6 +664,16 @@ html {
         .banner-info {
           padding-bottom: 240px !important;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-screen-from){
+    font-size: 0.85rem;
+    img {
+      width: 100%;
+      &.original {
+        width: auto;
       }
     }
   }
