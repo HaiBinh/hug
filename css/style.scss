@@ -7,7 +7,7 @@
 $header-height: 60px;
 $body-padding: 40px;
 $max-container-width: 1200px;
-$primary-color: #1A6472;
+$primary-color: #14606e;
 $seconday-color: #F36F42;
 $primary-font: 'Roboto';
 $mobile-screen-from: 950px;
@@ -72,13 +72,19 @@ html {
     }
     h2 {
       font-size: 2.4rem;
-      font-weight: 300;
+      font-weight: 400;
+      margin: 1em 0 0.25em 0;
     }
     h3 {
       font-size: 2rem;
     }
     h4 {
       font-size: 1.5rem;
+    }
+    h5{
+      font-size: 1rem;
+      margin: 0 0 2.5rem 0;
+      font-weight: 400;
     }
     .header {
       font-weight: 300;
@@ -129,6 +135,10 @@ html {
                 &:hover {
                   text-decoration: underline;
                 }
+              }
+              a:hover{
+                color: $primary-color;
+                text-decoration: none;
               }
             }
           }
@@ -192,12 +202,22 @@ html {
           text-align: center;
         }
         p {
+          font-weight: 300;
           span {
             display: block;
             &:before {
               content: '▪ ';
             }
           }
+        }
+        h2{
+          margin-top: 0;
+          font-size: 2rem;
+        }
+        h5{
+          font-size: 0.95rem;
+          margin-bottom: 1.5em;
+          font-weight: 600;
         }
       }
     }
@@ -230,10 +250,14 @@ html {
 
           @extend .container-theme;
           @extend .debug;
-
+          .text-center{
+            h2{
+              margin-top: 0.25em;
+            }
+          }
           .session-name {
             text-align: inherit;
-            font-size: 2rem;
+            font-size: 1.5rem;
             span:last-child {
               color: $seconday-color;
             }
@@ -420,9 +444,15 @@ html {
           span:last-child{
             color: $seconday-color;
           }
+          span{
+            font-size: 0.89em;
+          }
         }
         h1{
-          font-size: 30px;
+          font-size: 3em;
+          font-weight: 400;
+          padding: 0;
+          margin: 0;
         }
         .programs{
           background: #DCDBDB;
@@ -431,7 +461,7 @@ html {
           min-width: 400px;
           .program-card{
             min-width: 260px;
-            height: 490px;
+            height: 390px;
             overflow: hidden;
             text-align: left;
             padding: 0;
@@ -443,10 +473,15 @@ html {
             }
             .content{
               margin: 1em 1em 2em 1em;
-              color: #000000;
+              h2{
+                color: #3A3A3A;
+                font-size: 1em;
+                font-weight: bold;
+              }
               p{
                 color: #939393;
                 font-weight: 400;
+                font-size: 0.95em;
               }
               a{
                 color: $primary-color;
@@ -460,6 +495,12 @@ html {
       .footer {
         background: #1A6472;
         color: #FFFFFF;
+        p{
+          font-weight: 100;
+        }
+        h4{
+          font-weight: 400;
+        }
         .column{
           display: flex;
           flex-direction: row;
@@ -568,7 +609,9 @@ html {
       padding: 0;
       margin: 0 0 1em 0;
       p {
-        font-size: 29px;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
         padding: 0;
         margin: 1em 0.1em 0.1em 0;
       }
