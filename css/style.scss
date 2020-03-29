@@ -193,7 +193,7 @@ html {
       -webkit-flex-wrap: wrap;
       .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 114px;
+        min-width: 130px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -213,6 +213,12 @@ html {
               content: '▪ ';
             }
           }
+        }
+      }
+      @media screen and (max-width: 480px){
+        .program-card{
+          margin: 4px;
+          padding: 20px 5px 5px 5px;
         }
       }
     }
@@ -697,23 +703,23 @@ html {
     }
     body {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
       }
       h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
       h5  {
         font-size: 1rem;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
       }
     }
 

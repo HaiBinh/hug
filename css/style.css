@@ -132,7 +132,7 @@ html {
       -webkit-flex-wrap: wrap; }
       html body .programs .program-card {
         padding: 20px 10px 10px 10px;
-        min-width: 114px;
+        min-width: 130px;
         margin: 8px;
         text-align: center;
         background-color: white;
@@ -148,6 +148,10 @@ html {
           display: block; }
           html body .programs .program-card p span:before {
             content: '▪ '; }
+      @media screen and (max-width: 480px) {
+        html body .programs .program-card {
+          margin: 4px;
+          padding: 20px 5px 5px 5px; } }
     html body .introduce tr td {
       padding: 0 5px; }
     html body .body {
@@ -438,18 +442,18 @@ html {
           width: auto;
           max-width: 100%; }
       html body h1 {
-        font-size: 2.5rem; }
+        font-size: 2.25rem; }
       html body h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin-block-start: 0.5em;
         margin-block-end: 0.5em; }
       html body h3 {
-        font-size: 1.75rem; }
-      html body h4 {
         font-size: 1.5rem; }
+      html body h4 {
+        font-size: 1.25rem; }
       html body h5 {
         font-size: 1rem;
-        margin-block-start: 1em;
-        margin-block-end: 1em; } }
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em; } }
 
 /*# sourceMappingURL=style.css.map */
