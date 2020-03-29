@@ -37,7 +37,6 @@ html {
       position: absolute;
       height: 60px;
       display: block;
-      flex-direction: row;
       z-index: 1000;
       width: 100%; }
       html body .header .container {
@@ -45,8 +44,7 @@ html {
         padding-bottom: 10px;
         display: flex; }
         html body .header .container div {
-          margin: auto;
-          display: inline-block; }
+          margin: auto; }
         html body .header .container .logo {
           margin-right: 10px;
           margin-left: 0; }
@@ -61,8 +59,7 @@ html {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: #333; }
+            overflow: hidden; }
             html body .header .container .top-menu ul li {
               float: left;
               padding: 0; }
@@ -155,7 +152,7 @@ html {
         html body .body .session .container .about {
           text-align: justify;
           width: 110%; }
-        @media (max-width: 950px) {
+        @media screen and (max-width: 950px) {
           html body .body .session .container .about {
             width: 100%; } }
         html body .body .session .container .session-name-invert {
@@ -178,7 +175,7 @@ html {
                 position: absolute;
                 bottom: 0;
                 width: 100%; }
-        @media (max-width: 950px) {
+        @media screen and (max-width: 950px) {
           html body .body .session .container .cols {
             display: block;
             flex-direction: unset; }
@@ -378,7 +375,7 @@ html {
           margin-bottom: 10px; }
         html body .banner .banner-info .pc-screen img.full-logo {
           width: 90%; }
-      @media (max-width: 950px) {
+      @media screen and (max-width: 950px) {
         html body .banner .banner-info {
           padding-bottom: 240px !important; } }
 

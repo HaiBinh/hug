@@ -56,7 +56,6 @@ html {
       position: absolute;
       height: $header-height;
       display: block;
-      flex-direction: row;
       z-index: 1000;
       width: 100%;
       .container{
@@ -67,7 +66,6 @@ html {
         //flex-direction: row;
         div {
           margin: auto;
-          display: inline-block;
         }
         .logo {
           margin-right: 10px;
@@ -86,7 +84,7 @@ html {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            //background-color: #333;
             li {
               float: left;
               padding: 0;
@@ -225,7 +223,7 @@ html {
             text-align: justify;
             width: 110%;
           }
-          @media (max-width: $mobile-screen-from) {
+          @media screen and (max-width: $mobile-screen-from) {
             .about {
               width: 100%;
             }
@@ -266,7 +264,7 @@ html {
               //display: inline;
             }
           }
-          @media (max-width: $mobile-screen-from) {
+          @media screen and (max-width: $mobile-screen-from) {
             .cols {
               display: block;
               flex-direction: unset;
@@ -605,7 +603,7 @@ html {
           }
         }
       }
-      @media (max-width: $mobile-screen-from) {
+      @media screen and (max-width: $mobile-screen-from) {
         .banner-info {
           padding-bottom: 240px !important;
         }
