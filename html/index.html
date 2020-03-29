@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="header">
-            <div class="container">
+            <div class="container header-container">
                 <div class="logo">
                     <img src="../uploads/1x/72ppi/72ppi/Asset%207.png">
                 </div>
@@ -16,34 +16,77 @@
                     MANAGED MOBILITY SERVICE
                 </div>
                 <div class="top-menu">
-                    <ul>
-                        <li>ABOUT</li>
-                        <li>SERVICE</li>
-                        <li>PACKAGE</li>
-                        <li>NEWS</li>
-                        <li style="padding-right: 0">CONTACT</li>
+                    <ul class="pc-screen">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#service">SERVICE</a></li>
+                        <li><a href="#package">PACKAGE</a></li>
+                        <li><a href="#news">NEWS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
+                    <div class="topnav mobile-screen">
+
+                      <div id="topnav">
+                        <a href="#about">ABOUT</a>
+                        <a href="#service">SERVICE</a>
+                        <a href="#package">PACKAGE</a>
+                        <a href="#news">NEWS</a>
+                        <a href="#contact">CONTACT</a>
+                      </div>
+                      <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <script>
+            function openMobileNav() {
+              var x = document.getElementById("topnav");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         <div class="body">
-            <!--<div class="session">-->
-                <!--<img class="banner" src="../uploads/1x/72ppi/1920w/Asset%207@1920x.png"/>-->
-                <!--<div class="container banner-info">-->
-                    <!--<div class="header-content-child">-->
-                    <!--<img src="../uploads/1x/72ppi/72ppi/Asset%207@72x.png">-->
-                    <!--<p>Here you go!</p>-->
-                    <!--</div>-->
-                    <!--<div class="header-content-child">-->
-                        <!--<img src="../uploads/1x/72ppi/72ppi/Asset%208@72x.png">-->
-                    <!--</div>-->
-                    <!--<div class="header-content-child">-->
-                        <!--<h2>'Be in the right place at the right moment.'</h2>-->
-                        <!--<h5>HUG is leasing the managed mobility services include driver and vehicle, to solve the challenges of every foreign companies and expatriates using the lastest telematics technology.</h5>-->
-                    <!--</div>-->
-                    <!--<img src="../uploads/1x/72ppi/72ppi/Asset%2010.png">-->
+            <div class="session banner">
+                <!--<div class="text-center">-->
+                    <img class="banner-img" src="../uploads/1x/72ppi/1920w/Asset%207@1920x.png"/>
                 <!--</div>-->
-            <!--</div>-->
+
+                <div class="container banner-info">
+                    <table class="pc-screen">
+                        <tr>
+                            <td width="60%">
+                                <!--<div class="header-content-child">-->
+                                <img class="full-logo" src="../uploads/1x/hug_logo_full.png">
+                                <div class="header-content-child">
+                                    <h2>'Be in the right place at the right moment.'</h2>
+                                    <div class="text-light text-large">HUG is leasing the managed mobility services include driver and vehicle,
+                                        to solve the challenges of every foreign companies and expatriates using the lastest telematics technology.</div>
+                                </div>
+                            </td>
+                            <td width="17%"/>
+                            <td width="23%">
+                                <img src="../uploads/1x/72ppi/72ppi/Asset%2010.png">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="mobile-screen">
+                        <!--<div class="header-content-child">-->
+                        <img src="../uploads/1x/hug_logo_full.png">
+                        <div class="header-content-child">
+                            <h2>'Be in the right place at the right moment.'</h2>
+                            <div class="text-light text-large">HUG is leasing the managed mobility services include driver and vehicle,
+                                to solve the challenges of every foreign companies and expatriates using the lastest telematics technology.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
             <div class="session">
                 <div class="container">
                     <div class="cols">
@@ -54,7 +97,7 @@
                             </div>
                             <!--<h3 style="color: #1A6472">ABOUT <strong style="color: #F36F42">HUG</strong></h3>-->
                             <h1>What is HUG? Here U Go?</h1>
-                            <div style="width: 110%; text-align: justify">
+                            <div class="about">
                                 <p>Our Mission is that we desire to serve a delightful experience for booking, waiting, riding with managed mobility service on HUG platform.
                                 <br/>Managed mobility is shaping a driver, vehicle status to be the most reliable,responsible, and supporting interactive communication for your business navigation.</p>
                                 <p>HUG, managed mobility service platform provides O2O booking, Online tracking, Eco-driving to free your time and emotion with cutting-edge IoT technologies.</p>
@@ -114,7 +157,7 @@
             </div>
             <div class="session background-primary">
                 <div class="container">
-                    <div class="text-right">
+                    <div class="text-center">
                         <div class="session-name">
                             <span>SERVICE</span>
                             <span>HUG</span>
@@ -220,7 +263,7 @@
                             <h2>Service Package</h2>
                             <div>Find out HUG Service Package Coverage</div>
                         </div>
-                        <div class="pc-screen">
+                        <div class="pc-screen-1">
                             <table class="packages">
                                 <thead>
                                     <tr>
