@@ -81,7 +81,7 @@ html body .body .text-right {
   text-align: right;
 }
 html body .body .background-primary {
-  background-color: #1A6472;
+  background-image: linear-gradient(-151deg, #096372 60.65%, #000511);
   color: white;
 }
 html body .body .background-third {
