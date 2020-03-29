@@ -7,7 +7,7 @@
   margin: auto;
   width: 100%;
   box-sizing: border-box;
-  max-width: 1280px;
+  max-width: 1200px;
   padding: 40px; }
 
 .debug, html body .body .session .container, html body .banner .banner-info {
@@ -32,6 +32,7 @@ html {
     margin: 0;
     width: 100%; }
     html body .header {
+      font-weight: 300;
       color: white;
       position: absolute;
       height: 60px;
@@ -69,7 +70,7 @@ html {
                 padding: 14px 10px;
                 text-decoration: none; }
                 html body .header .container .top-menu ul li a:hover {
-                  text-underline: white; }
+                  text-decoration: underline; }
           html body .header .container .top-menu .topnav {
             overflow: hidden;
             position: relative; }
@@ -194,7 +195,7 @@ html {
         transform: translate(-50%, 0); }
       html body .banner .banner-info {
         padding-top: 140px !important;
-        padding-bottom: 100px !important;
+        padding-bottom: 140px !important;
         margin: 0 !important;
         position: relative;
         color: white;
@@ -204,12 +205,22 @@ html {
         html body .banner .banner-info table img {
           width: 100%; }
           html body .banner .banner-info table img.full-logo {
-            width: 80%; }
+            width: 90%; }
+        html body .banner .banner-info table tr td {
+          vertical-align: top; }
+          html body .banner .banner-info table tr td:first-child {
+            padding-top: 60px;
+            padding-bottom: 60px; }
+          html body .banner .banner-info table tr td:last-child {
+            padding: 20px; }
         html body .banner .banner-info img {
           width: 100%; }
         html body .banner .banner-info h2 {
           margin-bottom: 10px; }
         html body .banner .banner-info .pc-screen img.full-logo {
-          width: 80%; }
+          width: 90%; }
+      @media (max-width: 950px) {
+        html body .banner .banner-info {
+          padding-bottom: 240px !important; } }
 
 /*# sourceMappingURL=style.css.map */
