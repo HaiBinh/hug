@@ -139,7 +139,7 @@ html {
         html body .programs .program-card p span {
           display: block; }
           html body .programs .program-card p span:before {
-            content: '● '; }
+            content: '▪ '; }
     html body .introduce tr td {
       padding: 0 5px; }
     html body .body {
