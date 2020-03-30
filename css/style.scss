@@ -21,7 +21,7 @@ $mobile-screen-from: 950px;
 }
 
 .debug {
-  //border: red solid 1px;
+  border: red solid 1px;
   width: 100%;
   //height: 500px;
 }
@@ -73,7 +73,6 @@ html {
     h2 {
       font-size: 2.4rem;
       font-weight: 400;
-      margin: 1em 0 0.25em 0;
     }
     h3 {
       font-size: 2rem;
@@ -83,7 +82,6 @@ html {
     }
     h5{
       font-size: 1rem;
-      margin: 0 0 2.5rem 0;
       font-weight: 400;
     }
     .header {
@@ -192,12 +190,12 @@ html {
         margin: 8px;
         text-align: center;
         background-color: white;
-        border-radius: 16px;
+        border-radius: 20px;
         flex: 1 1 0;
         -webkit-flex: 1 1 0;
         color: $primary-color;
         .program-icon {
-          width: 35%;
+          width: 25%;
           display: inline-block;
           text-align: center;
         }
@@ -211,12 +209,14 @@ html {
           }
         }
         h2{
-          margin-top: 0;
-          font-size: 2rem;
+          margin-top: 0.35em;
+          margin-bottom: 0.35em;
+          font-size: 1.75rem;
         }
         h5{
           font-size: 0.95rem;
-          margin-bottom: 1.5em;
+          margin-top: 0.5em;
+          margin-bottom: 1em;
           font-weight: 600;
         }
       }
@@ -346,7 +346,7 @@ html {
                     th{
                       font-weight: 400;
                       width: 200px;
-                      min-width: 150px;
+                      min-width: 100px;
                       //border: #353535 solid 1px;
                       border: none;
                     }
@@ -371,16 +371,19 @@ html {
                     .fa-check-circle-o {
                       color: $primary-color;
                     }
-                    td:first-child(odd){
-                      width: 200px;
-                      background-color: #9E9D9E;
-                      //background-color: red;
-                    }
                     td{
                       //border: #353535 solid 1px;
                       border: none;
                       width: 200px;
-                      min-width: 150px;
+                      min-width: 100px;
+                      &:first-child{
+                        min-width: 150px;
+                      };
+                    }
+                    td:first-child(odd){
+                      width: 200px;
+                      background-color: #9E9D9E;
+                      //background-color: red;
                     }
                   }
                 }
@@ -458,7 +461,7 @@ html {
           background: #DCDBDB;
           overflow-x: auto;
           flex-wrap: unset;
-          min-width: 400px;
+          //min-width: 400px;
           .program-card{
             min-width: 260px;
             height: 390px;
@@ -620,6 +623,7 @@ html {
         width: 100%;
         height: 36px;
         border: solid 1px #FFFFFF;
+        box-sizing: border-box;
       }
 
       button {
@@ -705,6 +709,13 @@ html {
           padding-bottom: 240px !important;
         }
       }
+    }
+  }
+
+  img {
+    &.original {
+      width: auto;
+      max-width: 100%;
     }
   }
 
