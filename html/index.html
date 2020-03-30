@@ -18,20 +18,52 @@
                 </div>
                 <div class="top-menu">
                     <ul class="pc-screen">
-                        <li><a class="topnav-item" href="#about">ABOUT</a></li>
-                        <li><a class="topnav-item" href="#service">SERVICE</a></li>
-                        <li><a class="topnav-item" href="#package">PACKAGE</a></li>
-                        <li><a class="topnav-item" href="#news">NEWS</a></li>
-                        <li><a class="topnav-item" href="#contact">CONTACT</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="about" >ABOUT</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="service" >SERVICE</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="package" >PACKAGE</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="news" >NEWS</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="contact" >CONTACT</a></li>
                     </ul>
                     <div class="topnav mobile-screen">
 
                       <div id="topnav">
-                        <a class="topnav-item" href="#about">ABOUT</a>
-                        <a class="topnav-item" href="#service">SERVICE</a>
-                        <a class="topnav-item" href="#package">PACKAGE</a>
-                        <a class="topnav-item" href="#news">NEWS</a>
-                        <a class="topnav-item" href="#contact">CONTACT</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>
+                      </div>
+                      <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header sticky-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <img src="../uploads/1x/72ppi/72ppi/Asset%207.png">
+                </div>
+                <div class="slogan">
+                    MANAGED MOBILITY SERVICE
+                </div>
+                <div class="top-menu">
+                    <ul class="pc-screen">
+                        <li><a class="topnav-item" href="javascript:void(0);" name="about" >ABOUT</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="service" >SERVICE</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="package" >PACKAGE</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="news" >NEWS</a></li>
+                        <li><a class="topnav-item" href="javascript:void(0);" name="contact" >CONTACT</a></li>
+                    </ul>
+                    <div class="topnav mobile-screen">
+
+                      <div id="topnav">
+                        <a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>
+                        <a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>
                       </div>
                       <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
                         <i class="fa fa-bars"></i>
@@ -92,12 +124,11 @@
                 </div>
 
             </div>
-            <a name="about"/>
-            <div class="session">
+            <div class="session" id="about">
                 <div class="container">
                     <div class="cols">
                         <div class="col">
-                            <div id="about" class="session-name">
+                            <div class="session-name">
                                 <span>ABOUT</span>
                                 <span>HUG</span>
                             </div>
@@ -156,11 +187,10 @@
                     </div>
                 </div>
             </div>
-            <a name="service"/>
-            <div class="session background-primary">
+            <div class="session background-primary" id="service">
                 <div class="container">
-                    <div class="text-center">
-                        <div id="service" class="session-name">
+                    <div class="text-right">
+                        <div class="session-name">
                             <span>SERVICE</span>
                             <span>HUG</span>
                         </div>
@@ -304,10 +334,10 @@
                     </div>
                 </div>
             </div>
-            <a name="package"/>
-            <div class="session background-third">
+
+            <div class="session background-third" id="package">
                 <div class="container">
-                    <div id="package" class="table-hug">
+                    <div class="table-hug">
                         <div>
                             <h2>Service Package</h2>
                             <h5>Find out HUG Service Package Coverage</h5>
@@ -466,7 +496,7 @@
                     </div>
                 </div>
             </div>
-            <a name="news"/>
+
             <div class="news-blog" id="news">
                 <div class="session">
                     <div class="container">

@@ -12,7 +12,6 @@
   padding: 40px; }
 
 .debug, html body .body .session .container, html body .banner .banner-info {
-  border: red solid 1px;
   width: 100%; }
 
 html {
@@ -123,6 +122,14 @@ html {
               html body .header .container .top-menu .topnav a.active {
                 background-color: #14606e;
                 color: white; }
+      @media screen and (max-width: 480px) {
+        html body .header .container {
+          padding-left: 20px;
+          padding-right: 20px; } }
+      html body .header.sticky-header {
+        height: 40px;
+        background-color: #14606e;
+        display: none; }
     html body .programs {
       display: flex;
       flex-direction: row;
@@ -142,10 +149,14 @@ html {
           width: 25%;
           display: inline-block;
           text-align: center; }
+          html body .programs .program-card .program-icon img {
+            -webkit-filter: drop-shadow(5px 5px 5px #888888);
+            filter: drop-shadow(5px 5px 5px #888888); }
         html body .programs .program-card p {
           font-weight: 300; }
           html body .programs .program-card p span {
-            display: block; }
+            display: block;
+            font-size: 0.95rem; }
             html body .programs .program-card p span:before {
               content: '▪ '; }
         html body .programs .program-card h2 {
@@ -283,6 +294,10 @@ html {
               overflow-x: auto; }
               html body .body .session .container .table-hug .mobile-screen table tbody tr td {
                 min-width: 200px; }
+        @media screen and (max-width: 480px) {
+          html body .body .session .container {
+            padding-left: 20px;
+            padding-right: 20px; } }
       html body .body .features {
         display: flex;
         align-items: center; }
@@ -313,7 +328,10 @@ html {
             overflow: hidden;
             text-align: left;
             padding: 0;
-            border-radius: unset; }
+            border-radius: unset;
+            -webkit-box-shadow: 2px 2px 0 2px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 2px 2px 0 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3); }
             html body .body .news-blog .programs .program-card img {
               width: 272px;
               margin-left: -2px; }
@@ -331,6 +349,8 @@ html {
                 color: #14606e;
                 text-decoration: none;
                 font-weight: bold; }
+                html body .body .news-blog .programs .program-card .content a:hover {
+                  color: #F36F42; }
       html body .body .footer {
         background: #1A6472;
         color: #FFFFFF; }
@@ -383,7 +403,7 @@ html {
       font-size: 18px;
       cursor: pointer; }
       html body .btn-primary:hover {
-        text-decoration: underline; }
+        color: #F36F42; }
     html body .ul-default ul, html body .body .footer .footer-info .logo ul, html body .body .footer .footer-info .hidden ul, html body .body .footer .footer-footer .footer-info ul {
       list-style: none;
       margin: 0;
