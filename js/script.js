@@ -83,14 +83,31 @@ var EPPZScrollTo =
 };
 
 window.onload = function () {
+    var topnav = document.getElementById("topnav-mobile");
+    // var topnav = $("#topnav-mobile");
+    var topnav_menuitems = $(".topnav-mobile-menuitems");
     window.openMobileNav = function(e) {
-        var x = document.getElementById("topnav");
-        if (x.style.display === "block" || (e !== undefined && !e.hasAttribute("mobile"))) {
-            x.style.display = "none";
+        if (topnav.style.display === "block" || (e !== undefined && !e.hasAttribute("mobile"))) {
+
+
+            topnav_menuitems.removeClass('display').addClass('hide');
+
+            // topnav_menuitems.addClass('hide');
+            setTimeout(function () {
+                topnav.style.display = "none";
+                topnav_menuitems.css('right', '-100%');
+            }, 250);
+
         } else {
-            x.style.display = "block";
+            topnav.style.display = "block";
+            // topnav_menuitems;
+            topnav_menuitems.removeClass('hide').addClass('display');
+            topnav_menuitems.css('right', '0px');
+
         }
     };
+
+    topnav.onclick = openMobileNav;
 
     var menu_item = document.getElementsByClassName("topnav-item");
     for (var i = 0; i < menu_item.length; i++) {
@@ -102,7 +119,24 @@ window.onload = function () {
         };
     }
 
-    var header = document.getElementById("header");
-    // document.onscroll()
+    // var sticky_header = document.getElementsByClassName("sticky-header")[0];
+    var sticky_header = $('.sticky-header');
+    var currentY = 0;
+    var started = false;
+    document.onscroll = function (event) {
+        var up = false;
+        if (started) {
+            up = window.pageYOffset - currentY < 0;
+        }
+        else {
+            started = true;
+        }
+        if (up && window.pageYOffset !== 0) {
+            sticky_header.addClass('sticky-header-display');
+        }
+        else {
+            sticky_header.removeClass('sticky-header-display');
+        }
+        currentY = window.pageYOffset;
+    }
 };
-

@@ -5,6 +5,10 @@
         <!--<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">-->
         <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.js"
+              integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
         <script src="../js/script.js"></script>
     </head>
     <body>
@@ -26,13 +30,17 @@
                     </ul>
                     <div class="topnav mobile-screen">
 
-                      <div id="topnav">
-                        <a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>
-                      </div>
+                      <!--<div id="topnav-mobile" class="hide">-->
+                          <!--<div ><span class="fa fa-close"></span></div>-->
+                          <!--<div class="topnav-mobile-menuitems">-->
+                              <!--<a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>-->
+                              <!--<a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>-->
+                              <!--<a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>-->
+                              <!--<a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>-->
+                              <!--<a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>-->
+                          <!--</div>-->
+
+                      <!--</div>-->
                       <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
                         <i class="fa fa-bars"></i>
                       </a>
@@ -58,19 +66,34 @@
                     </ul>
                     <div class="topnav mobile-screen">
 
-                      <div id="topnav">
-                        <a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>
-                        <a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>
-                      </div>
+                      <!--<div id="topnav">-->
+                        <!--<a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>-->
+                        <!--<a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>-->
+                        <!--<a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>-->
+                        <!--<a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>-->
+                        <!--<a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>-->
+                      <!--</div>-->
                       <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
                         <i class="fa fa-bars"></i>
                       </a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="topnav mobile-screen">
+
+          <div id="topnav-mobile" class="hide">
+              <div class="close-menu"><span class="fa fa-close"></span></div>
+              <div class="topnav-mobile-menuitems">
+                  <a class="topnav-item" href="javascript:void(0);" name="about" mobile>ABOUT</a>
+                  <a class="topnav-item" href="javascript:void(0);" name="service" mobile>SERVICE</a>
+                  <a class="topnav-item" href="javascript:void(0);" name="package" mobile>PACKAGE</a>
+                  <a class="topnav-item" href="javascript:void(0);" name="news" mobile>NEWS</a>
+                  <a class="topnav-item" href="javascript:void(0);" name="contact" mobile>CONTACT</a>
+              </div>
+
+          </div>
         </div>
         <!--<script>-->
             <!--function openMobileNav() {-->
@@ -134,17 +157,13 @@
                             </div>
                             <!--<h3 style="color: #1A6472">ABOUT <strong style="color: #F36F42">HUG</strong></h3>-->
                             <h1>What is HUG? Here U Go?</h1>
-                            <div class="about">
+                            <div class="text-justify text-body">
                                 <p>Our Mission is that we desire to serve a delightful experience for booking, waiting, riding with managed mobility service on HUG platform.
                                 <br/>Managed mobility is shaping a driver, vehicle status to be the most reliable,responsible, and supporting interactive communication for your business navigation.</p>
                                 <p>HUG, managed mobility service platform provides O2O booking, Online tracking, Eco-driving to free your time and emotion with cutting-edge IoT technologies.</p>
                                 <p>HUG telematics technologies enable a premium level of vehicle insurance and driving etiquette for the best comfortableness.</p>
                             </div>
 
-                            <!--<img style="margin-top: 50px" src="../uploads/1x/72ppi/Asset%2017.png">-->
-                            <!--<div>-->
-                                <!--<div></div>-->
-                            <!--</div>-->
                             <div class="session-name-invert">
                                 <span>HUG</span>
                                 <span>SOLVING</span>
@@ -189,16 +208,16 @@
             </div>
             <div class="session background-primary" id="service">
                 <div class="container">
-                    <div class="text-right">
+                    <div class="text-center">
                         <div class="session-name">
                             <span>SERVICE</span>
                             <span>HUG</span>
                         </div>
-                        <h2>HUG Benefit</h2>
-                        <h5>
+                        <h1>HUG Benefit</h1>
+                        <div class="text-body">
                             HUG solution is a Managed Mobility Service Platform (MMSP) for corporate drivers and vehicles.<br/>
                             It has four main sub-systems to provide comprehensively managed services.
-                        </h5>
+                        </div>
                     </div>
                     <div class="programs">
                         <div class="program-card">
@@ -208,7 +227,7 @@
 
                             <h2>Application</h2>
                             <h5>Online-to-Office managed App</h5>
-                            <p>
+                            <p class="text-small">
                                 <span>Meta-communication between rider and driver</span>
                                 <span>Interactive and predictable services</span>
                             </p>
@@ -221,7 +240,7 @@
                             </div>
                             <h2>Telematics</h2>
                             <h5>Reliable Telematics Communication</h5>
-                            <p>
+                            <p class="text-small">
                                 <span>Driving etiquette and performance</span>
                                 <span>Real-time risk / incident managent</span>
                             </p>
@@ -232,7 +251,7 @@
                             </div>
                             <h2>Insurance</h2>
                             <h5>Premium volunteer insurance</h5>
-                            <p>
+                            <p class="text-small">
                                 <span>Protection from finalcial loss</span>
                                 <span>Better medical treatments</span>
                             </p>
@@ -243,7 +262,7 @@
                              </div>
                             <h2>Legal Support</h2>
                             <h5>Designated legal support</h5>
-                            <p>
+                            <p class="text-small">
                                 <span>Compromising conflicts</span>
                                 <span>Arbitration Proceedings</span>
                             </p>
@@ -257,11 +276,11 @@
                         <div class="session-name">
 <!--                            <span>SERVICE</span>-->
 <!--                            <span>HUG</span>-->
-                            <h2>HUG Features</h2>
+                            <h1>HUG Features</h1>
                         </div>
-                        <h5>
+                        <div class="text-body">
                             Find out HUG Admin & Application Features Highlights
-                        </h5>
+                        </div>
                     </div>
                     <div class="pc-screen">
                         <div class="features">
@@ -276,7 +295,7 @@
                                     </div>
                                     <div class="feature-info">
                                         <h2><img class="original" src="../uploads/1x/72ppi/com-and-cloud.png"> HUG in the Cloud</h2>
-                                        <p>HUG is an application that provides high-class passenger transportation services developed and managed </p>
+                                        <div class="text-body">HUG is an application that provides high-class passenger transportation services developed and managed </div>
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +328,7 @@
                                     </div>
                                     <div class="feature-info" style="width: 120%">
                                         <h2><img class="original" src="../uploads/1x/72ppi/mo-com-cloud.png"> HUG in the Cloud</h2>
-                                        <p>HUG is an application that provides high-class passenger transportation services developed and managed </p>
+                                        <div class="text-body">HUG is an application that provides high-class passenger transportation services developed and managed </div>
                                     </div>
                                 </div>
                             </div>
@@ -339,8 +358,8 @@
                 <div class="container">
                     <div class="table-hug">
                         <div>
-                            <h2>Service Package</h2>
-                            <h5>Find out HUG Service Package Coverage</h5>
+                            <h1>Service Package</h1>
+                            <div class="text-body">Find out HUG Service Package Coverage</div>
                         </div>
                         <div class="pc-screen-1">
                             <table class="packages">
@@ -485,12 +504,12 @@
                             </table>
                         </div>
                         <div>
-                            <h2>Quotation Consultancy</h2>
-                            <h5>
+                            <h1>Quotation Consultancy</h1>
+                            <div class="text-body">
                                 Do you have more than 100 cars?
                                 <br/>
                                 Please contract us for an individual offer.
-                            </h5>
+                            </div>
                             <button type="button" class="btn-primary">CONTACT US</button>
                         </div>
                     </div>
@@ -510,9 +529,9 @@
                                 <img src="../uploads/1x/72ppi/human.png">
                                 <div class="content">
                                     <h2>Business meeting</h2>
-                                    <p>Entrepreneurs face a number of challenges
+                                    <div class="text-small">Entrepreneurs face a number of challenges
                                         when starting their own businesses,
-                                        which include building a strong ...</p>
+                                        which include building a strong ...</div>
                                     <a href="#">Read More ></a>
                                 </div>
                             </div>
@@ -521,9 +540,9 @@
 
                                 <div class="content">
                                     <h2>Business meeting</h2>
-                                    <p>Entrepreneurs face a number of challenges
+                                    <div class="text-small">Entrepreneurs face a number of challenges
                                         when starting their own businesses,
-                                        which include building a strong ...</p>
+                                        which include building a strong ...</div>
                                     <a href="#">Read More ></a>
                                 </div>
                             </div>
@@ -532,9 +551,9 @@
 
                                 <div class="content">
                                     <h2>Business meeting</h2>
-                                    <p>Entrepreneurs face a number of challenges
+                                    <div class="text-small">Entrepreneurs face a number of challenges
                                         when starting their own businesses,
-                                        which include building a strong ...</p>
+                                        which include building a strong ...</div>
                                     <a href="#">Read More ></a>
                                 </div>
                             </div>
@@ -543,9 +562,9 @@
 
                                 <div class="content">
                                     <h2>Business meeting</h2>
-                                    <p>Entrepreneurs face a number of challenges
+                                    <div class="text-small">Entrepreneurs face a number of challenges
                                         when starting their own businesses,
-                                        which include building a strong ...</p>
+                                        which include building a strong ...</div>
                                     <a href="#">Read More ></a>
                                 </div>
                             </div>
@@ -562,7 +581,7 @@
                                 <input placeholder="E-mail">
                                 <button type="button">Send</button>
                             </div>
-                            <div class="logo column-left">
+                            <div class="logo column-left text-body">
                                 <img class="original" src="../uploads/1x/72ppi/72ppi/Asset%201.png">
                                 <p>NTP-TECH JOINT STOCK COMPANY & NEXTTO PTE. LTD.</p>
                                 <p>Hanoi Office: Tang 2, Toa nha UDICO4, Duong Hoang Dao Thuy, Phuong Trung Hoa, Quan Cau Giay, TP.Ha Noi, Viet Nam</p>
